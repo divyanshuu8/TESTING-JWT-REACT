@@ -4,7 +4,7 @@ function App() {
   const [token, setToken] = useState('');
 
   const handleLogin = async () => {
-    const response = await fetch('http://localhost:3001/login', {
+    const response = await fetch('https://testing-jwt-react.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ function App() {
   };
 
   const handleProtectedData = async () => {
-    const response = await fetch('http://localhost:3001/protected', {
+    const response = await fetch('https://testing-jwt-react.onrender.com/protected', {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,

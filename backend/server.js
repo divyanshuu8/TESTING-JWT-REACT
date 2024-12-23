@@ -49,5 +49,5 @@ function authenticateToken(req, res, next) {
 
 // Start the server
 app.listen(3001, () => {
-  console.log('Server is running on http://localhost:3001');
+  console.log('Server is running on https://testing-jwt-react.onrender.com');
 });
